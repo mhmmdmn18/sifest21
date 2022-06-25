@@ -1,0 +1,405 @@
+/**
+* Template Name: TheEvent - v4.3.0
+* Template URL: https://bootstrapmade.com/theevent-conference-event-bootstrap-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  background-image: linear-gradient(to left bottom, #0e1636, #0d142f, #0d1228, #0c1022, #0a0d1b, #090b19, #070a16, #060813, #060813, #060814, #050914, #050914);
+  color: #2f3138;
+  font-family: "Poppins", sans-serif;
+}
+
+p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  margin: 0 0 20px 0;
+  padding: 0;
+  /* color: #0e1b4d; */
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+hr {
+  display: none;
+}
+
+.login-menu {
+  display: none !important;
+}
+
+@media (max-width: 992px) {
+  .login {
+    margin: 0 15px 0 0;
+  }
+  .login-menu {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    border-radius: 6px !important;
+    color: white !important;
+    margin-left: 15px!important;
+  }
+}
+
+#competition-details{
+  padding: 60px 0;
+}
+
+#competition-details p {
+  color: #fff !important;
+}
+
+#competition-details .details h2 {
+  color: #fff !important;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+#competition-details .details .social {
+  margin-bottom: 15px;
+}
+
+#competition-details .details .social a {
+  background: #e9edfb;
+  /* color: #112363; */
+  line-height: 1;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#competition-details .details .social a:hover {
+  background: #f82249;
+  color: #fff;
+}
+
+#competition-details .details .social a i {
+  font-size: 16px;
+  line-height: 0;
+}
+
+#competition-details .details p {
+  /* color: #112363; */
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1150px) {
+  #competition-details {
+    padding: 60px 0 0 0;
+  }
+  #competition-details img {
+    margin: 30px 0px;
+  }
+  #competition-details .details h2 {
+    margin-bottom: 20px;
+  }
+  #competition-details .details p {
+    margin-bottom: 25px;
+  }
+  .details {
+    margin-top: 60px;
+  }
+  .border {
+    margin: 40px 0 !important;
+  }
+}
+
+/*--------------------------------------------------------------
+# Timeline
+--------------------------------------------------------------*/
+
+.container1 {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+}
+
+#timeline {
+    background-color: inherit;
+    padding-top: 50px;
+  }
+
+#timeline h2 {
+  font-size: 46px;
+  color: #fff;
+}
+
+.timeline {
+    color: #fff;
+    width: 80%;
+    height: auto;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .icon {
+    font-size: 1.25em;
+  }
+  .timeline ul {
+    list-style: none;
+  }
+  .timeline ul li {
+    padding: 20px;
+    background: linear-gradient(105deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
+    color: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: -30px;
+  }
+  .timeline ul li:nth-child(odd) {
+    margin-left: -30px;
+  }
+  .timeline ul li:last-child {
+    margin-bottom: 0;
+  }
+  .timeline-content h1 {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+  .timeline-content p {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 300;
+  }
+  .timeline-content .date {
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+  }
+
+  .timeline h3, h6 {
+    color: #fff;
+  }
+
+  
+  @media only screen and (min-width: 650px) {
+    .timeline:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 2px;
+      height: 100%;
+      background-color: gray;
+    }
+    .timeline ul li {
+      width: 50%;
+      position: relative;
+      margin-bottom: 50px;
+      margin-left: -30px !important;
+    }
+    .timeline ul li:nth-child(odd) {
+      float: left;
+      clear: right;
+      transform: translateX(-30px);
+      border-radius: 20px 0px 20px 20px;
+    }
+    .timeline ul li:nth-child(even) {
+      float: right;
+      clear: left;
+      transform: translateX(30px);
+      border-radius: 0px 20px 20px 20px;
+    }
+    .timeline ul li:nth-child(even) {
+      margin-left: -30px !important;
+    }
+    .timeline ul li::before {
+      content: "";
+      position: absolute;
+      height: 20px;
+      width: 20px;
+      border-radius: 50%;
+      background-color: #aca8bdaf;
+      top: 0px;
+    }
+    .timeline ul li:nth-child(odd)::before {
+      transform: translate(50%, -50%);
+      right: -30px;
+    }
+    .timeline ul li:nth-child(even)::before {
+      transform: translate(-50%, -50%);
+      left: -30px;
+    }
+    .timeline-content .date {
+      position: absolute;
+      top: -50px;
+    }
+    .timeline ul li:hover::before {
+      background-color: hsl(0, 0%, 16%);
+    }
+    .container1 {
+      padding-top: 60px 0 0 0;
+    }
+  }
+
+.border {
+  width: 12vw;
+  height: 10px;
+  background-color: #f82249;
+  margin: 10px 0 15px 0;
+  border: none !important;
+}
+
+.btn-primary {
+  background-color: #f82249;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #a81833;
+}
+
+font {
+  color: #f82249;
+}
+
+.background-transparent {
+  background: rgba( 255, 255, 255, 0.1 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 3px );
+  -webkit-backdrop-filter: blur( 3px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border-radius: 10px;
+  padding: 50px;
+}
+
+#information-section {
+  padding: 30px 0px;
+  background: #fff;
+}
+
+#information-section h2 {
+  color: #0a1026;
+  font-size: 46px;
+}
+
+#contact-cp {
+  background: #040919;
+  color: #fff;
+}
+
+#contact-cp h1 {
+  color: #fff;
+  font-size: 46px;
+}
+
+#contact-cp .col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto 15px;
+  padding: 20px;
+}
+
+#contact-cp ion-icon{
+  background: rgba( 255, 255, 255, 0.1 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 3px );
+  -webkit-backdrop-filter: blur( 3px );
+  border-radius: 50%;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  padding: 20px;
+  font-size: 35px;
+}
+
+#contact-cp img{
+  width: 40px;
+  z-index: 10;
+}
+
+#contact-cp .line {
+  background: rgba( 255, 255, 255, 0.1 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 3px );
+  -webkit-backdrop-filter: blur( 3px );
+  border-radius: 50%;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  padding: 20px;
+}
+
+#contact-cp ul {
+  background: rgba( 255, 255, 255, 0.1 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 3px );
+  -webkit-backdrop-filter: blur( 3px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  padding: 20px;
+}
+
+#contact-cp ul li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+#contact-cp hr {
+  display: none;
+}
+
+@media (max-width: 798px) {
+  #timeline {
+    padding-top: 0px ;
+  }
+  .container1 {
+    padding: 10vh;
+  }
+  #information-section span {
+    text-align: justify;
+  }
+  #information-section h2, #timeline h2 {
+    font-size: 40px;
+  }
+  #contact-cp h1 {
+    padding-top: 40px;
+  }
+  #contact-cp .row {
+    display: flex;
+    flex-direction: column;
+  }
+  #contact-cp hr {
+    display: block;
+    width: 60%;
+    margin: 50px auto;
+  }
+  #contact-cp .col {
+    margin: auto 0;
+  }
+  hr {
+    display: block;
+    width: 70%;
+    margin: 50px auto;
+    color: white;
+  }
+}
+
+
+path.ionicon {
+  color: #fff !important;
+}

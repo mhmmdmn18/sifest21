@@ -1,0 +1,152 @@
+#about {
+  /* background: url("../../img/about-bg.jpg"); */
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  /* color: #fff; */
+  color: #333 !important;
+  padding: 150px 60px;
+}
+
+#about .container .inner-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inner-about .kiri {
+  width: 50%;
+  background-image: url(../../img/maskot-backdrop.png) !important;
+  background-size: cover;
+  padding-bottom: 30px;
+}
+
+.inner-about .kiri img {
+  width: 85%;
+  margin-top: 10px;
+}
+
+.inner-about .kiri .backgdrop {
+  top: 5px;
+  left: 28px;
+  color: black;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  z-index: 0;
+  font-size: 50px;
+}
+
+.inner-about .kiri h1 {
+  z-index: 1;
+  position: absolute;
+  transform: rotate(-20deg);
+  top: 25px;
+  font-weight: 700;
+  color: #333 !important;
+  font-size: 50px;
+}
+
+.inner-about .kiri h1 span {
+  color: #f82249;
+}
+
+.inner-about .kanan {
+  width: 50%;
+}
+
+@media (min-width: 1024px) {
+  #about {
+    background-attachment: fixed;
+  }
+}
+
+#about:before {
+  content: "";
+  background: rgba(13, 20, 41, 0.8);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#about h2 {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  /* color: #fff; */
+  color: #333 !important;
+}
+
+#about h3 {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  /* color: #fff; */
+  color: #333 !important;
+}
+
+#about p {
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 20px;
+  /* color: #fff; */
+  color: #333 !important;
+}
+
+@media only screen and (max-width: 988px) {
+  #about {
+    /* background: url("../../img/about-bg.jpg"); */
+    background-size: cover;
+    overflow: hidden;
+    position: relative;
+    /* color: #fff; */
+    color: #333 !important;
+    padding: 80px 20px;
+  }
+
+  #about .container .inner-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .inner-about .kiri {
+    width: 100%;
+    background-image: url(../../img/maskot-backdrop.png) !important;
+    background-size: cover;
+    padding-bottom: 80px;
+  }
+
+  .inner-about .kiri .backgdrop {
+    top: 5px;
+    left: 28px;
+    color: black;
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    z-index: 0;
+    font-size: 50px;
+  }
+
+  .inner-about .kiri h1 {
+    z-index: 1;
+    position: absolute;
+    transform: rotate(-20deg);
+    top: 25px;
+    font-weight: 700;
+    color: #333 !important;
+    font-size: 50px;
+  }
+
+  .inner-about .kiri h1 span {
+    color: #f82249;
+  }
+
+  .inner-about .kanan {
+    width: 100%;
+  }
+}
